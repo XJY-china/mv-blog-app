@@ -1,0 +1,33 @@
+/* 全局重置样式：消除所有元素的默认外边距和内边距，设置盒模型为border-box */
+/* border-box模式：元素的宽度和高度包括内边距和边框，不包括外边距 */
+* {
+  margin: 0;          /* 清除所有元素的外边距 */
+  padding: 0;         /* 清除所有元素的内边距 */
+  box-sizing: border-box; /* 设置盒模型，确保宽度计算包含padding和border */
+}
+
+/* 设置body元素的全局字体和字体渲染优化 */
+body {
+  /* 系统字体栈：按顺序使用系统字体，确保跨平台一致性 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;  /* Webkit浏览器字体抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;   /* Firefox浏览器字体抗锯齿 */
+}
+
+/* 主应用容器样式 */
+.App {
+  min-height: 100vh;          /* 最小高度为100%视口高度，确保页面占满全屏 */
+  display: flex;              /* 使用flex弹性布局 */
+  flex-direction: column;     /* 垂直方向排列子元素 */
+}
+
+/* 主要内容区域样式 */
+.content {
+  flex: 1;                   /* 占用所有可用空间，将页脚推到底部 */
+  padding: 20px;             /* 内容区域内边距20像素 */
+  max-width: 1200px;         /* 最大宽度限制为1200像素 */
+  margin: 0 auto;            /* 水平居中：上下边距0，左右自动计算 */
+  width: 100%;               /* 宽度占满父容器 */
+}
