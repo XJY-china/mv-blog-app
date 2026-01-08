@@ -1,0 +1,189 @@
+/* 根布局样式 */
+.layout {
+    /* 最小高度为100vh，占满整个视口高度 */
+    min-height: 100vh;
+    /* 使用flex布局，垂直方向排列 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 内容区域样式 */
+.content {
+    /* 占据剩余所有可用空间 */
+    flex: 1;
+    /* 内边距：上下24px，左右0 */
+    padding: 24px 0;
+    /* 最大宽度限制 */
+    max-width: 800px;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 宽度为100% */
+    width: 100%;
+}
+
+/* 返回区域样式 */
+.backSection {
+    /* 底部外边距 */
+    margin-bottom: 16px;
+    /* 内边距左右各24px */
+    padding: 0 24px;
+}
+
+/* 返回按钮样式 */
+.backButton {
+    /* 内边距设为0 */
+    padding: 0;
+    /* 高度自适应内容 */
+    height: auto;
+}
+
+/* 卡片样式 */
+.card {
+    /* 圆角大小 */
+    border-radius: 8px;
+    /* 盒子阴影效果 */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    /* 内边距 */
+    padding: 24px;
+}
+
+/* 标题样式 */
+.title {
+    /* 文字居中 */
+    text-align: center;
+    /* 字体大小 */
+    font-size: 24px;
+    /* 字体粗细 */
+    font-weight: 600;
+    /* 底部外边距 */
+    margin-bottom: 32px;
+    /* 文字颜色 */
+    color: #333;
+}
+
+/* 头像区域样式 */
+.avatarSection {
+    /* 居中显示 */
+    text-align: center;
+    /* 底部外边距 */
+    margin-bottom: 32px;
+}
+
+/* 头像预览样式 */
+.avatarPreview {
+    /* 宽度 */
+    width: 120px;
+    /* 高度 */
+    height: 120px;
+    /* 圆形效果 */
+    border-radius: 50%;
+    /* 边框样式 */
+    border: 3px solid #f0f0f0;
+    /* 图片填充方式：覆盖容器 */
+    object-fit: cover;
+    /* 底部外边距 */
+    margin-bottom: 8px;
+}
+
+/* 头像提示文字样式 */
+.avatarHint {
+    /* 字体大小 */
+    font-size: 14px;
+    /* 文字颜色 */
+    color: #666;
+    /* 外边距 */
+    margin: 0;
+}
+
+/* 头像输入组样式 */
+.avatarInputGroup {
+    /* 使用flex布局 */
+    display: flex;
+    /* 子元素间距 */
+    gap: 12px;
+    /* 垂直方向居中 */
+    align-items: center;
+}
+
+/* 按钮组样式 */
+.buttonGroup {
+    /* 顶部外边距 */
+    margin-top: 32px;
+    /* 底部外边距设为0 */
+    margin-bottom: 0;
+}
+
+/* 按钮容器样式 */
+.buttons {
+    /* 使用flex布局 */
+    display: flex;
+    /* 水平方向两端对齐 */
+    justify-content: space-between;
+}
+
+/* 编辑个人信息页面的容器样式 */
+.edit-profile-container {
+  /* 设置最大宽度为600像素 */
+  max-width: 600px;
+  /* 上下外边距20像素，左右自动居中 */
+  margin: 20px auto;
+  /* 左右内边距20像素，上下为0 */
+  padding: 0 20px;
+}
+
+/* 个人信息卡片的样式 */
+.profile-card {
+  /* 顶部外边距20像素 */
+  margin-top: 20px;
+}
+
+/* 头像区域的样式 */
+.avatar-section {
+  /* 文本居中对齐 */
+  text-align: center;
+  /* 底部外边距30像素 */
+  margin-bottom: 30px;
+}
+
+/* 头像预览图片的样式 */
+.avatar-preview {
+  /* 宽度120像素 */
+  width: 120px;
+  /* 高度120像素 */
+  height: 120px;
+  /* 边框圆角50%，形成圆形 */
+  border-radius: 50%;
+  /* 边框：3像素实线，浅灰色 */
+  border: 3px solid #f0f0f0;
+  /* 图片填充方式：覆盖整个容器 */
+  object-fit: cover;
+  /* 底部外边距15像素 */
+  margin-bottom: 15px;
+}
+
+/* 响应式设计：小屏幕适配 */
+@media (max-width: 768px) {
+    /* 小屏幕下的内容区域内边距 */
+    .content {
+        padding: 16px;
+    }
+    
+    /* 小屏幕下的卡片内边距 */
+    .card {
+        padding: 16px;
+    }
+    
+    /* 小屏幕下的头像预览大小 */
+    .avatarPreview {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* 小屏幕下的头像输入组布局 */
+    .avatarInputGroup {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+    
